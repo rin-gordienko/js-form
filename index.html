@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>PetEvent</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <article class="halves">
+        <img class="design-section" src="./img/pet-hi-five.jpg" />
+      </article>
+      <article class="form-section halves">
+        <h2 class="form-section__headline">
+          Let's make the world a better place! Bring your friends for better
+          experience
+        </h2>
+        <form action="#" class="form">
+          <div class="lines">
+            <div class="form__wrapper lines-two mr">
+              <label for="first-name" class="label first-name">
+                First name*</label
+              >
+              <input
+                class="input"
+                id="first-name"
+                name="first-name"
+                type="text"
+                required
+              />
+            </div>
+            <div class="form__wrapper lines-two">
+              <label for="last-name" class="label last-name">Last Name</label>
+              <input
+                class="input"
+                id="last-name"
+                name="last-name"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="lines">
+            <div class="form__wrapper lines-two mr">
+              <label for="pet-name" class="label pet-name">Pet Name*</label>
+              <input
+                class="input"
+                id="pet-name"
+                name="pet-name"
+                type="text"
+                required
+              />
+            </div>
+            <div class="form__wrapper lines-two">
+              <label class="label" for="pet-select">Your pet is*</label>
+
+              <select
+                class="input input-select"
+                name="pets"
+                id="pet-select"
+                required
+              >
+                <option class="option" value="">--Choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+                <option value="parrot">Parrot</option>
+                <option value="snake">Snake</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="turtle">Turtle</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="lines">
+            <div class="form__wrapper lines-two mr">
+              <label for="email" class="label email">Email</label>
+              <input class="input" id="email" name="email" type="email" />
+            </div>
+            <div class="form__wrapper lines-two">
+              <label for="phone" class="label phone">Phone number*</label>
+              <input
+                class="input"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                type="tel"
+                placeholder="123-456-7890"
+                title="Please enter a valid number, example: 123-456-7890"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="">
+            <legend class="picker-name label">Choose a location*</legend>
+            <div class="picker-wrapper">
+              <label>
+                <input
+                  class="picker"
+                  type="radio"
+                  id="park"
+                  name="location"
+                  value="park"
+                  checked
+                />
+                Circle Park</label
+              >
+              <label>
+                <input
+                  class="picker"
+                  type="radio"
+                  id="center"
+                  name="location"
+                  value="center"
+                />
+                Training Center</label
+              >
+              <label>
+                <input
+                  class="picker"
+                  type="radio"
+                  id="avenue"
+                  name="location"
+                  value="avenue"
+                />
+                Square Avenue</label
+              >
+            </div>
+          </div>
+          <div class="form__wrapper-agreement">
+            <input
+              type="checkbox"
+              class="agreement"
+              id="agreement"
+              name="agreement"
+              required
+            />
+            <label for="agreement">I will take care of my own animal</label>
+            <button class="button" type="submit">Join the fun</button>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
